@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册MySQL</title>
+    <style>
+        body{
+            background: url(./202.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+
+        }
+        form{
+            width: 500px;
+            height: 250px;
+
+
+            background-color: #E1E9EF;
+
+
+            opacity: 80%;
+
+            padding: 120px 100px;
+
+            font-size: 18px;
+
+            border-radius: 10px;
+
+
+            margin: 120px auto;
+        }
+
+        .textinput{
+
+            height: 40px;
+            width: 300px;
+
+            padding: 0 35px;
+
+            border: none;
+
+            background: #F8F9F9;
+
+            font-size: 15px;
+
+            box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 2px 5px #aaaaaa;
+
+            border-radius: 5px;
+
+            color: saddlebrown;
+        }
+
+        input[type="submit"]{
+            /* 设置宽高 */
+            width: 90px;
+            height: 30px;
+
+            text-align: center;
+
+            border: none;
+
+            border-radius: 5px;
+
+            font:16px "黑体";
+
+            background-color: #61dafb;
+        }
+        a {
+
+            text-decoration: none;
+        }
+
+        a:hover {
+        
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+<div class="div">
+    <br>
+    <form action="register_check.jsp" method="GET">
+        <table border="1"; width = "500">
+            <h1><div style=" margin:0 auto; text-align:center">注册操作</div></h1>
+            <tr>
+                <td colspan="2"><div style="width: 100px; margin:0 auto; text-align:center">用户注册</div>
+
+                </td>
+
+            <tr>
+            <tr>
+                <td>
+                    <div style="width: 100px; margin:0 auto; text-align:center">用户名：</div>
+                </td>
+                <td>
+                    <input type="text" name="user" placeholder="请输入用户名">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="width: 100px; margin:0 auto; text-align:center">密码：</div>
+                </td>
+                <td>
+                    <input type="password" name="pwd" placeholder="请输入密码">
+                </td>
+            </tr>
+              <tr>
+      <td><div style="width: 100px; margin:0 auto; text-align:center">权限：</div></td>
+      <td>
+                                              
+          <input id="a1" type="checkbox" name="permissions" checked="checked" value="select" />
+          <label for="a1">查询</label>
+                                                  
+          <input id="b1" type="checkbox" name="permissions" value="insert" />
+          <label for="b1">插入</label>
+
+          <input id="c1" type="checkbox"  name="permissions" value="update"/>
+          <label for="c1">更新</label>
+          
+          <input id="d1" type="checkbox"  name="permissions" value="delete"/>
+          <label for="d1">删除</label>
+
+      </td>
+            <tr>
+                <td  colspan="2">
+                    <div style="width: 100px; margin:0 auto; text-align:center"><input type="submit" name="registerin" value="注册"></div>
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+</div>
+</body>
+
+</html>

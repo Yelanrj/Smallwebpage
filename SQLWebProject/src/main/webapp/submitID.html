@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>外显子查询</title>
+	    <style>
+        body{
+            background: url(./202.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+
+        }
+        form{
+            width: 500px;
+            height: 250px;
+
+
+            background-color: #E1E9EF;
+
+
+            opacity: 80%;
+
+            padding: 120px 100px;
+
+            font-size: 18px;
+
+            border-radius: 10px;
+
+
+            margin: 120px auto;
+        }
+
+        .textinput{
+
+            height: 40px;
+            width: 300px;
+
+            padding: 0 35px;
+
+            border: none;
+
+            background: #F8F9F9;
+
+            font-size: 15px;
+
+            box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7), inset 0px 2px 5px #aaaaaa;
+
+            border-radius: 5px;
+
+            color: saddlebrown;
+        }
+
+        input[type="submit"]{
+            width: 90px;
+            height: 30px;
+
+            text-align: center;
+
+            border: none;
+
+            border-radius: 5px;
+
+            font:16px "黑体";
+
+            background-color: #61dafb;
+        }
+        a {
+
+            text-decoration: none;
+        }
+
+        a:hover {
+        
+            text-decoration: underline;
+        }
+    </style>
+	</head>
+	<body>
+		<form action="visitExon.jsp" method="GET"> 
+		输入待查询的transcript_id:
+		<input type="text" name="transid">
+		<input type="submit" name="choice" value="查询">
+		</form>
+		
+	</body>
+</html>
